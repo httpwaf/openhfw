@@ -18,7 +18,7 @@ OpenHFW是一款开源的Linux服务器高级威胁感知系统，由进程防�
 #### 四、安装步骤
 支持Linux x86 64位系统（arm暂不开放），保证可以上网，以root权限运行下面命令：
 
-    1、 wget http://59.110.1.135/openhfw
+    1、 wget http://101.42.31.94/openhfw
     2、 chmod +x ./openhfw
     3、 ./openhfw
 
@@ -33,12 +33,12 @@ OpenHFW是一款开源的Linux服务器高级威胁感知系统，由进程防�
 
 #### 六、实战演示地址
 
-实战地址 [http://59.110.1.135/openhfw.html](http://59.110.1.135/openhfw.html)
+实战地址 [http://101.42.31.94/openhfw.html](http://101.42.31.94/openhfw.html)
 
 #### 七、付费演示地址
 
 单机版免费，但开放源码、分布式集中管控、技术支持、功能增加等要收费。请用大屏电脑观看，首次加载大屏组件需要10秒：
-集中管控大屏 [http://59.110.1.135/center.html](http://59.110.1.135/center.html)
+集中管控大屏 [http://101.42.31.94/center.html](http://101.42.31.94/center.html)
 
 #### 八、源码部署请加微信号httpwaf
 
