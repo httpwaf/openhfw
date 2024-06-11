@@ -33,7 +33,7 @@ OpenHFW是一款开源的Linux服务器高级威胁感知系统，由进程防�
 
 #### 六、实战演示地址
 
-实战地址 [http://101.42.31.94/openhfw.html](http://101.42.31.94/openhfw.html)
+实战地址 [http://101.42.31.94/openhfw.html](http://101.42.31.94/ok.html)
 
 #### 七、付费演示地址
 
