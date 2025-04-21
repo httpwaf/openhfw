@@ -1,7 +1,7 @@
-# openhfw
+# Shell命令防火墙
 
 #### 一 、介绍
-Open Source Host-based FireWall简称OpenHFW是一款开源的Linux服务器全流量防御系统，由进程防火墙、流量防火墙、文件防火墙等组成，用AI深度学习流量，发现和拦截漏洞利用、木马通信、文件篡改等，及时发现未知攻击保障服务器数据安全。
+Shell命令防火墙用于发现和防御服务器所有的Shell命令调用，是业界独有创新产品，是对0day攻击的最有效防御。
 
 #### 二、承诺和不承诺
 承诺：为了保证服务器安全，除首次安装，任何时候绝不联网。
@@ -11,24 +11,41 @@ Open Source Host-based FireWall简称OpenHFW是一款开源的Linux服务器全�
 注意：WEB管理9998端口禁止向公网开放，或者严格设置IP白名单访问权限。
 
 #### 三 主要功能
-    1、XDP下一代流量防火墙：全程记录网络流量、抗击DDOS、检测异常IP等，保障流量安全。
-    2、进程防火墙：用AI技术分析检测异地IP、异常进程、危险木马行为等，保障进程安全。
-    3、主机安全系统：包括文件篡改、SSH加固、SSH命令审计、基线检测、弱口令扫描等，保障主机安全。 
-    4、Shell命令防火墙实时拦截高危漏洞（过于落后，不对外公开），防御webshell、拦截0day。 
+    1、全程记录每个进程的通信IP、进出流量、在线时长等。。
+    2、全程记录各进程的原始流量，保存为pcap格式，发现特别隐蔽的内存木马等。
+    3、用AI技术分析检测异地IP、异常进程、危险木马、违规外IP外联通信等，保障进程安全。
 
-#### 四、商业版演示地址
+#### 四、安装步骤
+支持Linux x86 64位系统（内核大于5.0），保证可以上网，以root权限运行下面命令：
 
-商业版也开源，实战地址 [http://101.42.31.94/openhfw.html](http://101.42.31.94/openhfw.html)
+    1、 wget http://101.42.31.94/openhfw
+    2、 chmod +x ./openhfw
+    3、 ./openhfw
 
-#### 五、集中管控演示地址
+首次安装下载大约半分钟，出现System is running.....代表安装成功，可以WEB管理口9998（防火墙允许）登录进去。
+
+#### 五、运行停止卸载
+启动运行:  ./openhfw         后台模式运行:   ./openhfw daemon
+
+停止运行:  ./openhfw stop    卸载 :   rm  /openhfw/ -rf
+
+默认没加开机启动，请自行把openhfw 加入开机启动程序。
+
+#### 六、实战演示地址
+
+实战地址 [http://101.42.31.94:9998/ok.html](http://101.42.31.94:9998/ok.html)
+
+更多演示[http://101.42.31.94:9998/prochtml/open_source.html](http://101.42.31.94:9998/prochtml/open_source.html)
+
+#### 七、付费演示地址
 
 请用大屏电脑观看，首次加载大屏组件需要10秒：
 集中管控大屏 [http://101.42.31.94/center.html](http://101.42.31.94/center.html)
 
-#### 六、源码和技术白皮书部署请加微信号httpwaf
+#### 八、源码或技术白皮书请加微信号httpwaf
 
 ![](https://gitee.com/httpwaf/httpwaf/raw/master/img/wechat.png)
 
-#### 七、来一张首页图片
+#### 九、来一张首页图片
 
 ![](https://gitee.com/httpwaf/httpwaf/raw/master/img/home.png)
